@@ -1,0 +1,331 @@
+:root {
+    --lightfuschia: #950952;
+    --darkfuschia: #5e0035;
+    --brightgreen: #4cb944;
+    --lightpurple: #730071; 
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--darkfuschia)
+} 
+
+p, #objectives {
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
+    background-color: #4cb944;
+    z-index: 9999;
+    width: 100px;
+    position: sticky;
+    top: 0;
+    left: 90%;
+    margin-left: -90%;
+  }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    background-color: #4cb944;
+    padding: 10px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  li a:hover {
+    color: white;
+    
+  }
+  
+  /* selected link */
+  a:active {
+    color: black;
+  }
+
+.main-content {
+    height: 100vh;
+    width: auto;
+    position: relative;
+    z-index: 1;
+    background-image: url(./images/manifestacion-chile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.cover-image {
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    z-index: 500;
+    margin-top: 0;
+    padding: 0;
+    top: -68px;
+
+}
+
+.arrow-down {
+    background-color: var(--brightgreen);
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    vertical-align:bottom;
+    padding-top: 20px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 90%;
+    z-index: 600;
+    color:var(--darkfuschia);
+}
+
+.arrow-down .fas {
+    color: black;
+    font-size: 2rem;
+}
+
+.title {
+    position: relative;
+    z-index: 9000;
+    /* top: 250px; */
+    margin:auto;
+    color: var(--lightfuschia);
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 4rem;
+    text-shadow: 2px 2px #fffcf2;
+}
+
+.title h1 {
+    margin: 0;
+    padding-top: 250px;
+    text-align: center;
+}
+/* .main-content {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+} */
+
+/* #description {
+    height:100%;
+} */
+
+.main {
+    margin-top: -400px;
+}
+
+
+.description {
+    /* background: -webkit-linear-gradient(top left, #950952 0%, #fffcf2 100%);
+    background: -moz-linear-gradient(top left, #950952  0%, #fffcf2 100%);
+    background: -o-linear-gradient(top left, #950952  0%, #fffcf2 100%);
+    background: linear-gradient(to bottom right, #950952  0%, #fffcf2 100%); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-color: #fffcf2;
+    height: 100vh;
+    margin-top: -240px;
+    color:var(--darkfuschia);
+    /* text-shadow: 1px 1px black; */
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.des-title {
+    padding: 50px 200px 10px 100px;
+    font-size: 2rem;
+    color: #4cb944;
+}
+
+.des-text {
+    padding: 0 200px 50px 100px;
+    font-size: 2rem;
+}
+
+#mission {
+    height: 100vh;
+}
+
+.mission-container {
+    display: flex;
+    flex-direction: row;
+    /* align-items: baseline; */
+    background-color:#fffcf2 ;
+}
+
+.mission-container p {
+    text-align: justify;
+}
+.mission-text {
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.mis-img {
+    max-width: 400px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.vis-img {
+    max-width: 400px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.vision-text {
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: -100px;
+}
+
+#objectives {
+    height: 100vh;
+}
+
+.objectives-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items:center;
+    background-color:#fffcf2 ;
+}
+
+.objectives-text {
+    height:100vh;
+    padding: 30px;
+    padding-right: 200px;
+}
+
+.objectives-text h1 {
+    text-align: center;
+}
+
+ol {
+    text-align: justify;
+}
+
+.duarte {
+    width: auto;
+    height: 100vh;
+    margin-left: -200px;
+    margin-bottom: -5px;
+}
+
+.obj-image-label {
+    margin-left: 20px;
+    margin-top: 0;
+    font-size: 0.7rem;
+}
+
+#contacts {
+    height: 100vh;
+}
+
+
+footer {
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Open Sans', sans-serif;
+    color:#fffcf2;
+    background-color: #950952;
+    font-size: 1.5rem;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-left: 0;
+    padding-right: 10%;
+}
+
+.fab {
+    font-size: 2rem;
+    color:#fffcf2;
+}
+
+footer ul {
+    list-style: none;
+    
+}
+
+footer h3 {
+    margin: 0 0 0 30px;
+}
+
+
+.donatebtn {
+    width: 200px;
+    background-color: #4cb944;
+    border:0px;
+    padding: 10px 20px;
+    margin: 30px 0 30px 30px;
+    font-family: 'Fredericka the Great', cursive;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    box-shadow: 1px 1px black;
+}
+/* #### Desktop #### */
+@media screen and (min-width: 1024px) {
+
+}
+
+/*  #### Tablet #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+}
